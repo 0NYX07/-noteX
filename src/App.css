@@ -1,0 +1,78 @@
+/* Common styles */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Dark theme styles */
+.dark {
+  background-color: #000000; /* Pure black background */
+  color: #ffffff; /* White text */
+}
+
+.dark .logo {
+  filter: drop-shadow(0 0 2em #ffffffaa); /* White glow on hover */
+}
+
+.dark .logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa); /* React blue glow on hover */
+}
+
+.dark .card {
+  padding: 2em;
+  background-color: #1a1a1a; /* Dark gray background for cards */
+  border: 1px solid #333333; /* Darker border */
+  border-radius: 8px;
+  color: #ffffff; /* White text */
+}
+
+.dark .read-the-docs {
+  color: #888888; /* Light gray text */
+}
+
+/* Light theme styles */
+.light {
+  background-color: #ffffff; /* White background */
+  color: #000000; /* Black text */
+}
+
+.light .logo {
+  filter: drop-shadow(0 0 2em #000000aa); /* Black glow on hover */
+}
+
+.light .logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa); /* React blue glow on hover */
+}
+
+.light .card {
+  padding: 2em;
+  background-color: #f0f0f0; /* Light gray background for cards */
+  border: 1px solid #cccccc; /* Lighter border */
+  border-radius: 8px;
+  color: #000000; /* Black text */
+}
+
+.light .read-the-docs {
+  color: #555555; /* Dark gray text */
+}
+
+/* Animation and media query */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+.glow-cyan {
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
